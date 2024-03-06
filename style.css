@@ -1,15 +1,23 @@
 .header {
-  height: 255px;
-  padding: 30px;
-  text-align: center;
+  padding: 10px;
+  max-width: 800px;
+  min-height: 120px;
+  text-align: left;
+  margin-left: auto; /* Center the header horizontally */
+  margin-right: auto;
 }
 
 .centerlogo {
-  text-align: center;
+  padding-top: 30px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 100%;
+  width: 35%;
+}
+
+.leftlogo {
+  position: absolute;
+  height: 100px;
 }
 
 body {
@@ -19,6 +27,7 @@ body {
   float: none;
   padding: 3px;
 }
+
 
 h1 {
  font-family: "Helvetica", sans-serif;
@@ -40,17 +49,10 @@ h3 {
   font-size: 16px;
   text-align: left;
   margin-top: 2.0em;
-}
-
-h4 {
-  font-family: "Helvetica", sans-serif;
+  font-weight: normal;
   text-decoration: underline;
-  font-weight:normal
-  font-size: 16px;
-  text-align: left;
-  margin-bottom: 0.4em;
-
 }
+
 
 p{
  text-align: left;
@@ -65,13 +67,11 @@ ul{
   font-size: 16px;
  line-height: 150%;
 }
-
-
+--
 p.small{
   font-size: 13px;
   margin-top: 0.5em;
 }
-
 
 p.center {
   text-align: center;
@@ -79,17 +79,17 @@ p.center {
 
 a:link {
   text-decoration: none;
-  color: #001EDE;
+  color: #0066CC;
 }
 
 a:visited {
   text-decoration: none;
-  color: #001EDE ;
+  color: #0066CC ;
 }
 
 a:hover {
   text-decoration: none;
-  background: #001EDE;
+  background: #0066CC;
   color: #FFFFFF;
 }
 
@@ -133,4 +133,76 @@ div.image-gallery img {
 mark {
     background-color: #DAF7A6;
     color: black;
+}
+
+
+.button-container {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #99cc33;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Helvetica", sans-serif;
+    font-weight:bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 auto; /* Center the button horizontally */
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+
+.button:hover, .button:link, .button:visited, .button:active {
+    color: #fff; /* Set text color to white for button link */
+}
+
+.menu {
+    text-align: right;
+}
+
+.menubutton {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 10px;
+    color: #0066CC;
+    background-color: white;
+    border: 1px solid #0066CC;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: "Helvetica", sans-serif;
+    font-weight:bold;
+    font-size: 14px;
+}
+
+.menubutton:hover {
+    background-color: #0066CC;
+    color: white;
+}
+
+table {
+  border-collapse: collapse;
+  border: none; /* Remove all borders from the table */
+}
+
+th, td {
+  padding: 6px;
+  border: none; /* Remove all borders from table cells */
+}
+
+th {
+  border-bottom: 1px solid black; /* Add a thicker black border below the header */
+  font-family: Helvetica, Arial, sans-serif; /* Set font to Helvetica */
+}
+
+tr:not(:last-child) td {
+  border-bottom: 1px solid black; /* Add a single black border below each row except the last one */
 }
