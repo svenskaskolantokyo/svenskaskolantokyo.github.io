@@ -98,29 +98,12 @@ a:active {
   color: #4169E1;
 }
 
-tab {
-  padding-left: 2em;
-}
 
 a.prev,.next:hover {
   color: #5c5c5c;
 }
 
-.headerimage {
-  display: block;
-  margin:  auto;
-  width: 100%;
-}
 
-div.image-gallery {
-  display: block;
-  float: center;
-}
-
-div.image-gallery img {
-  display: inline-block;
-  text-align: center;
-}
 
 .clear {
   clear: both;
@@ -128,11 +111,6 @@ div.image-gallery img {
   width: 0;
   font-size: 1px;
   line-height: 0;
-}
-
-mark {
-    background-color: #DAF7A6;
-    color: black;
 }
 
 
